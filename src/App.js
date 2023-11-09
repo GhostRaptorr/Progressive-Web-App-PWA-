@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import Home from './Home';
