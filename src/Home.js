@@ -1,11 +1,20 @@
+import logo from "./logo.svg";
 import React from "react";
-import { Carousel, Container, Row, Col, Accordion } from "react-bootstrap";
+import {
+  Card,
+  Carousel,
+  Container,
+  Row,
+  Col,
+  Accordion,
+} from "react-bootstrap";
+
 
 export default function Home() {
   return (
     <div>
       <header>
-        <h1>Bienvenido a mi Sitio</h1>
+        <h1>HALO INFITI</h1>
       </header>
 
       <section>
@@ -18,23 +27,51 @@ export default function Home() {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="https://wallpapercave.com/wp/wp2342125.jpg"
+                    src="https://i.pinimg.com/originals/8f/c0/2a/8fc02adb4d6b1809f468be5c1d3855ff.jpg"
                     alt="Primer Slide"
                   />
                   <Carousel.Caption>
-                    <h3>Proyecto 1</h3>
-                    <p>Descripción del primer proyecto.</p>
+                    <h3>Arte Conceptual de Halo Infinite</h3>
+                    <p>
+                      Explora una colección de arte conceptual impresionante que
+                      muestra los mundos y criaturas de la próxima entrega de la
+                      saga Halo. Sumérgete en diseños detallados que inspiraron
+                      la creación de este universo épico.
+                    </p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="https://i.pinimg.com/originals/90/83/35/9083359d9d7061378ff1fbe7b12ec8af.jpg"
+                    src="https://wallpapers.com/images/featured/halo-infinite-wuhidroy7k38fnz2.jpg"
                     alt="Segundo Slide"
                   />
                   <Carousel.Caption>
-                    <h3>Proyecto 2</h3>
-                    <p>Descripción del segundo proyecto.</p>
+                    <h3>Desarrollo de Armas de Combate</h3>
+                    <p>
+                      Sumérgete en el proceso de desarrollo de las armas de
+                      combate para Halo Infinite. Desde la conceptualización
+                      hasta la implementación en el juego, descubre cómo se
+                      crearon y equilibraron las armas icónicas para ofrecer una
+                      experiencia de juego intensa y emocionante.
+                    </p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src="https://preview.redd.it/zy2kyxd6p8311.png?auto=webp&s=b65b32a0804b5f60c5ba798f29ee7d696cbcbdb7"
+                    alt="Tercer Slide"
+                  />
+                  <Carousel.Caption>
+                    <h3>Diseño de Niveles Interactivos</h3>
+                    <p>
+                      Explora la ingeniería detrás de los niveles interactivos
+                      de Halo Infinite. Descubre cómo se han diseñado paisajes y
+                      escenarios para ofrecer una experiencia de juego
+                      inmersiva, desafiante y llena de acción para los
+                      jugadores.
+                    </p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 {/* Puedes agregar más items según sea necesario */}
@@ -43,75 +80,108 @@ export default function Home() {
           </Row>
         </Container>
       </section>
+      <br />
 
       <section>
-        {/* Presentación */}
+        <Row>
+          <Col md={4}>
+            <Card>
+              <Card.Img
+                variant="top"
+                src="https://c4.wallpaperflare.com/wallpaper/69/728/1015/master-chief-halo-infinite-hd-wallpaper-preview.jpg"
+                alt="Ejemplo de Origami 1"
+              />
+              <Card.Body>
+                <Card.Title>Exploración de Anillos Halo</Card.Title>
+                <Card.Text>
+                  Únete a una emocionante misión de exploración en los anillos
+                  Halo en Halo Infinite. Descubre paisajes alienígenas, enfrenta
+                  peligros y desentraña los misterios de esta serie de
+                  instalaciones increíbles.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card>
+              <Card.Img
+                variant="top"
+                src="https://coolthemestores.com/wp-content/uploads/2021/10/Halo-Infinite-wallpaper-background.jpg"
+                alt="Ejemplo de Origami 2"
+              />
+              <Card.Body>
+                <Card.Title>Alianza Covenant en Halo Infinite</Card.Title>
+                <Card.Text>
+                  Aprende más sobre la misteriosa presencia de la Alianza
+                  Covenant en Halo Infinite. ¿Cuáles son sus objetivos en esta
+                  entrega? Descubre secretos y desafíos mientras exploras la
+                  narrativa del juego.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card>
+              <Card.Img
+                variant="top"
+                src="https://c4.wallpaperflare.com/wallpaper/71/252/999/halo-infinite-master-chief-halo-the-weapon-halo-halo-zeta-halo-hd-wallpaper-preview.jpg"
+                alt="Ejemplo de Origami 2"
+              />
+              <Card.Body>
+                <Card.Title>Armadura Mjolnir MK VII</Card.Title>
+                <Card.Text>
+                  Explora la última generación de la icónica armadura Mjolnir en
+                  Halo Infinite. Descubre sus capacidades mejoradas y cómo te
+                  preparará para enfrentar amenazas alienígenas en el nuevo
+                  título de la serie.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          {/* Puedes agregar más Cards según sea necesario */}
+        </Row>
+      </section>
+      <br></br>
+
+      <Container>
+        <div className="embed-responsive embed-responsive-16by9">
+          <iframe
+            width="780"
+            height="455"
+            src="https://www.youtube.com/embed/PyMlV5_HRWk?si=ckO-5gIiEQ91lrHB"
+            title="YouTube video player"
+            frameBorder="0" // Modificado a 'frameBorder' con 'B' mayúscula
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen // React interpreta 'allowfullscreen' como 'allowFullScreen'
+          ></iframe>
+        </div>
+      </Container>
+
+      <footer style={{ backgroundColor: "#1A237E", color: "#FFFFFF" }}>
+        {/* Footer */}
         <Container>
           <Row>
-            <Col>
-              <h2>¡Hola!</h2>
-              <Accordion defaultActiveKey="0">
-                <Accordion.Item eventKey="0">
-                  <Accordion.Header>Accordion Item #1</Accordion.Header>
-                  <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                  <Accordion.Header>Accordion Item #2</Accordion.Header>
-                  <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                  </Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
+            <Col md={4}>
+              <img
+                src={logo}
+                alt="Logo de la Aplicación"
+                style={{ width: "200px", height: "100px" }}
+              />
+            </Col>
+            <Col md={4}>
+            <br/><br/>
+              <p>Halo Infinity copyright &copy; 2023</p>
+            </Col>
+            <Col md={4}>
+              <img
+                src={logo}
+                alt="Logo de la Aplicación"
+                style={{ width: "200px", height: "100px" }}
+              />
             </Col>
           </Row>
         </Container>
-      </section>
-
-      <footer style={{ backgroundColor: "#1A237E", color: "#FFFFFF" }}>
-  {/* Footer */}
-  <Container>
-    <Row>
-      <Col md={4}>
-        {/* Sección del logo */}
-        <img src="ruta-a-tu-logo.png" alt="Logo" style={{ width: "100px" }} />
-      </Col>
-      <Col md={4}>
-        {/* Sección de contacto */}
-        <h4>Contacto</h4>
-        <p>¡Contáctame para discutir tu próximo proyecto!</p>
-        {/* Agrega información de contacto */}
-      </Col>
-      <Col md={4}>
-        {/* Sección de iconos de redes sociales */}
-        <h4>Redes Sociales</h4>
-        <div>
-          {/* Agrega los iconos de redes sociales con los estilos de Bootstrap */}
-          <i className="bi bi-facebook"></i>
-          <i className="bi bi-twitter"></i>
-          <i className="bi bi-instagram"></i>
-          {/* Reemplaza las clases de iconos con las correspondientes de Bootstrap */}
-        </div>
-      </Col>
-    </Row>
-  </Container>
-</footer>
-
+      </footer>
     </div>
   );
 }
