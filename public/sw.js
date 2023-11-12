@@ -13,8 +13,7 @@ this.addEventListener("install",(event)=>{
 				])
 		}))
 })
-
-
+ 
 
 this.addEventListener("fetch",(event)=>{
 	if(!navigator.onLine){

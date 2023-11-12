@@ -102,7 +102,7 @@ export default function Home() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={4}>
+          <Col md={4}> 
             <Card>
               <Card.Img
                 variant="top"
